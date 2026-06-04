@@ -5,29 +5,18 @@
     padding: 0;
 }
 
-/* Variables */
-:root {
-    --primario: #1F3864;
-    --acento: #2563eb;
-    --fondo: #f4f6f9;
-    --blanco: #ffffff;
-    --texto: #1a1a2e;
-    --gris: #6b7280;
-    --borde: #dde3ec;
-}
-
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--fondo);
-    color: var(--texto);
+    background-color: #f4f6f9;
+    color: #1a1a2e;
 }
 
 /* Header */
 header {
-    background-color: var(--primario);
-    color: var(--blanco);
-    padding: 5rem 2rem;
+    background-color: #1F3864;
+    color: #ffffff;
+    padding: 3rem 2rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -36,6 +25,7 @@ header {
 
 header h1 {
     font-size: 4.5rem;
+    color: #ffffff; 
 }
 
 nav ul {
@@ -45,14 +35,14 @@ nav ul {
 }
 
 nav ul li a {
-    color: var(--blanco);
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.95rem;
     bottom: unset;
 }
 
 nav ul li a:hover {
-    color: var(--acento);
+    color: #2563eb;
 }
 
 /* main */
@@ -68,13 +58,13 @@ section {
 
 section h2 {
     font-size: 1.5rem;
-    color: var(--primario);
+    color: #1F3864;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid var(--acento);
+    border-bottom: 2px solid #2563eb;
     padding-bottom: 0.5rem;
 }
 
-/* tarjetaas*/
+/* tarjetas */
 #productos {
     display: flex;
     flex-wrap: wrap;
@@ -82,12 +72,17 @@ section h2 {
 }
 
 .tarjeta {
-    background-color: var(--blanco);
-    border: 1px solid var(--borde);
+    background-color: #ffffff;
+    border: 1px solid #dde3ec;
     border-radius: 10px;
-    flex: 1 1 240px;
+    flex: 0 1 300px;
     max-width: 300px;
     overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1);
 }
 
 .tarjeta img {
@@ -105,19 +100,19 @@ section h2 {
 
 .tarjeta h3 {
     font-size: 0.95rem;
-    color: var(--texto);
+    color: #1a1a2e;
 }
 
 .tarjeta p {
     font-size: 0.85rem;
-    color: var(--gris);
+    color: #6b7280;
 }
 
 .tarjeta button {
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: var(--acento);
-    color: var(--blanco);
+    background-color: #2563eb;
+    color: #ffffff;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -125,11 +120,11 @@ section h2 {
 }
 
 .tarjeta button:hover {
-    background-color: var(--primario);
+    background-color: #1F3864;
 }
 
 button:disabled {
-    background-color: var(--gris);
+    background-color: #6b7280;
     cursor: not-allowed;
 }
 
@@ -143,17 +138,25 @@ button:disabled {
 
 #ofertas ol li {
     font-size: 0.95rem;
-    color: var(--texto);
+    color: #1a1a2e;
     padding: 0.75rem 1rem;
-    background-color: var(--blanco);
-    border: 1px solid var(--borde);
+    background-color: #ffffff;
+    border: 1px solid #dde3ec;
     border-radius: 6px;
+    transition: all 0.3s; 
 }
 
-/* footer*/
+#ofertas ol li:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    cursor: pointer;
+}
+
+/* footer */
 footer {
-    background-color: var(--primario);
-    color: var(--blanco);
+    background-color: #1F3864;
+    color: #ffffff;
     text-align: center;
     padding: 1.5rem;
     margin-top: 3rem;

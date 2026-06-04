@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TechStore</title>
+<title>TechStore.</title>
 <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
 <header>
-    <h1>TechStore</h1>  
+    <h1><span class="tech">Tech</span><span class="store">Store</span></h1>  
     <nav>
     <ul>
         <li><a href="#catalogo">Catálogo</a></li>
@@ -29,10 +29,27 @@
     <h2>Ofertas y novedades</h2>
     <ol>
         <li>SmartWatch Series 9 — 30% OFF</li>
-        <li>Teclado mecánico RGB — nuevo ingreso</li>
-        <li>Monitor UltraWide 34" — precio de lanzamiento</li>
+        <li>Teclado mecánico RGB — Nuevo Ingreso</li>
+        <li>Monitor UltraWide 34" — Precio Lanzamiento</li>
     </ol>
     </section>
+
+    <section>
+        <h2>Iniciar sesión</h2>
+        <form id="form-login">
+            <div class="campo">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+                <div class="campo">
+                    <label for="password">Contraseña *</label>
+                    <input type="password" id="password" name="password" placeholder="Tu contraseña" required>
+                </div>
+                <button type="submit">Iniciar sesión</button>
+        </form>
+        <p class="link-pie">¿No tenés cuenta? <a href="registro.html">Registrate</a>
+        </p>
+    </section>    
 
 </main>
 
