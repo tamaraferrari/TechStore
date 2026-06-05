@@ -175,17 +175,3 @@ return article;
 //insertar todas las tarjetas en el div#productos
 const contenedor = document.getElementById('productos');
 catalogo.forEach(producto => contenedor.appendChild(crearTarjeta(producto)));
-
-//logica del formulario de Login
-const form = document.getElementById('form-login');
-
-form.addEventListener('submit', (event) => {
-    event.preventDefault(); 
-
-const datos = Object.fromEntries(new FormData(event.target));
-
-// imprime los datos en la consola para verificar que funciona
-console.log('Login:', { email: datos.email, password: datos.password });
-form.reset();
-
-});
